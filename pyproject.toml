@@ -1,0 +1,69 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "minitorch"
+version = "1.0.0"
+description = "MiniTorch — a from-scratch deep learning library for educational purposes"
+requires-python = ">=3.9"
+dependencies = [
+    "colorama>=0.4.6",
+    "hypothesis>=6.100",
+    "numba>=0.59",
+    "numpy>=1.24,<2.0",
+    "pytest>=8.0",
+    "pytest-env>=1.1",
+    "typing_extensions",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit>=4.0",
+    "ruff>=0.8.0",
+    "pyright>=1.1.390",
+]
+cuda = [
+    "numba-cuda[cu12]>=0.4.0",
+]
+app = [
+    "python-mnist",
+    "streamlit>=1.40",
+    "streamlit-ace",
+    "plotly>=5.20",
+    "datasets>=3.0",
+    "embeddings>=0.0.8",
+    "networkx>=3.0",
+    "pydot>=1.4",
+    "watchdog>=1.0",
+    "altair>=4.2",
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "task0_0", "task0_1", "task0_2", "task0_3", "task0_4",
+    "task1_0", "task1_1", "task1_2", "task1_3", "task1_4",
+    "task2_0", "task2_1", "task2_2", "task2_3", "task2_4",
+    "task3_0", "task3_1", "task3_2", "task3_3", "task3_4",
+    "task4_0", "task4_1", "task4_2", "task4_3", "task4_4",
+]
+
+[tool.ruff]
+exclude = [
+    ".git", "__pycache__", "build", "dist",
+    "**/project/**/*",
+]
+
+[tool.ruff.lint]
+ignore = [
+    "ANN401", "N801", "E203", "E266", "E501", "E741",
+    "N803", "N802", "N806",
+    "D400", "D401", "D105", "D415", "D402", "D205",
+    "D100", "D101", "D107", "D213", "ANN204", "D203",
+]
+select = ["D", "E", "F", "N", "ANN"]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"tests/**/*.py" = ["D"]
+"minitorch/scalar_functions.py" = ["ANN001", "ANN201"]
+"minitorch/tensor_functions.py" = ["ANN001", "ANN201"]

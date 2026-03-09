@@ -1,0 +1,15 @@
+Epoch 1, loss 31.36906, train accuracy 52.44%, val accuracy 48.00%, best val 48.00%
+Epoch 2, loss 30.46382, train accuracy 55.56%, val accuracy 54.00%, best val 54.00%
+Epoch 3, loss 29.30157, train accuracy 64.22%, val accuracy 59.00%, best val 59.00%
+Epoch 4, loss 27.96284, train accuracy 70.67%, val accuracy 63.00%, best val 63.00%
+Epoch 5, loss 26.45459, train accuracy 73.11%, val accuracy 68.00%, best val 68.00%
+Epoch 6, loss 24.21632, train accuracy 78.00%, val accuracy 66.00%, best val 68.00%
+Epoch 7, loss 22.37025, train accuracy 81.11%, val accuracy 73.00%, best val 73.00%
+Epoch 8, loss 21.33543, train accuracy 78.89%, val accuracy 71.00%, best val 73.00%
+Epoch 9, loss 19.03576, train accuracy 83.33%, val accuracy 74.00%, best val 74.00%
+Epoch 10, loss 17.40213, train accuracy 85.33%, val accuracy 73.00%, best val 74.00%
+Epoch 11, loss 15.65109, train accuracy 86.00%, val accuracy 74.00%, best val 74.00%
+Epoch 12, loss 14.35204, train accuracy 88.89%, val accuracy 75.00%, best val 75.00%
+Epoch 13, loss 13.18590, train accuracy 89.33%, val accuracy 76.00%, best val 76.00%
+Epoch 14, loss 11.75334, train accuracy 92.00%, val accuracy 75.00%, best val 76.00%
+Epoch 15, loss 9.99793, train accuracy 93.56%, val accuracy 75.00%, best val 76.00%
